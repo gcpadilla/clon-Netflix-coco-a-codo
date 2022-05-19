@@ -1,0 +1,27 @@
+.netButton {
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.netButton:hover {
+  background-color: rgba(255, 255, 255, 0.859);
+  color: #000;
+}
+.tShadow {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.netTitle{
+  font-size: 35px;
+}
+
+.netSpann{
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}

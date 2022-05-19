@@ -1,0 +1,71 @@
+export const settings = {
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  // autoplay: true,
+  // speed: 5000,
+  // autoplaySpeed: 2000,
+  cssEase: "linear",
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // speed: 5000,
+        // autoplaySpeed: 2000,
+        cssEase: "linear",
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // speed: 5000,
+        // autoplaySpeed: 2000,
+        cssEase: "linear",
+      },
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // speed: 5000,
+        // autoplaySpeed: 2000,
+        cssEase: "linear",
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // speed: 5000,
+        // autoplaySpeed: 2000,
+        cssEase: "linear",
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // speed: 5000,
+        // autoplaySpeed: 2000,
+        cssEase: "linear",
+      },
+    },
+  ],
+};

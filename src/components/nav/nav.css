@@ -1,0 +1,6 @@
+.hoverText {
+    color: white;
+}
+.hoverText:hover {
+    color: #ffffff60;
+}
