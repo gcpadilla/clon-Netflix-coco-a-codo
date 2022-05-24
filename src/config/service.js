@@ -1,9 +1,19 @@
-import { tryGetTopRateMovies, trayGetPopularMovies, trayGetDiscoverMovies, trayGetDiscoverTv,trayGetUpcomingMovie } from "./apiConfig";
+import {
+  tryGetTopRateMovies,
+  trayGetPopularMovies,
+  trayGetDiscoverMovies,
+  trayGetDiscoverTv,
+  trayGetUpcomingMovie,
+  trayGetNowPlayingMovie,
+  trayGetAuthentication,
+} from "./apiConfig";
 
 export const service = {
   tryGetTopRateMovies,
   trayGetPopularMovies,
   trayGetDiscoverMovies,
   trayGetDiscoverTv,
-  trayGetUpcomingMovie
+  trayGetUpcomingMovie,
+  trayGetNowPlayingMovie,
+  trayGetAuthentication,
 };

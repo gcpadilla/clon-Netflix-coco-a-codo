@@ -2,17 +2,24 @@ import React from "react";
 import moment from "moment";
 import "moment/locale/es";
 import Divider from "../divider/Divider";
-import "./baner.css";
+import Error from "../error/Error";
+import "./banner.css";
 import { FaPlay } from "react-icons/fa";
-
+import Loading from "../loading/Loading";
 import { API } from "../../config/constants";
 import useFetch from "../../hooks/useFetch";
 
-const Baner = ({ entity }) => {
-  const { data, loading } = useFetch(entity);
+const Banner = ({ entity }) => {
+  const { data, loading, error } = useFetch(entity);
   const aleatorio = Math.round(Math.random() * 20);
   return (
     <>
+      {loading && (
+        <div style={{ width: "100vW", height: "80vh" }}>
+          <Loading color={"text-danger"} />
+        </div>
+      )}
+      {error && <Error />}
       {data &&
         data.map((d, i) => {
           if (i === aleatorio) {
@@ -35,8 +42,8 @@ const Baner = ({ entity }) => {
                     {d.title ? d.title : d.original_name}
                   </div>
                   <span className=" bg-transparent tShadow netSpann">
-                      {moment(d.release_date).format("LL")}
-                    </span>
+                    {moment(d.release_date).format("MMMYYYY").toUpperCase()}
+                  </span>
                   <div className="bg-transparent">
                     <button className="netButton ms-3">
                       <FaPlay className="me-2 bg-transparent" />
@@ -64,4 +71,4 @@ const Baner = ({ entity }) => {
   );
 };
 
-export default Baner;
+export default Banner;

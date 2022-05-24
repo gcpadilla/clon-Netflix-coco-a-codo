@@ -72,6 +72,27 @@ export const trayGetUpcomingMovie = async (lang = "es", page = 1) => {
   }
 };
 
+export const trayGetNowPlayingMovie = async (lang = "es", page = 1) => {
+  const url = createUrl.api(API.entity.type.movie.nowPlaying, lang, page);
+  try {
+    const response = await axios.get(url);
+    return response;
+  } catch (error) {
+    return [];
+  }
+};
+
+export const trayGetAuthentication = async () => {
+  const url = API.authentication;
+  try {
+    const response = await axios.get(url);
+    return response;
+  } catch (error) {
+    return [];
+  }
+};
+
+
 /*
 Add Supported Image Sizes  
                                  Min Res      Max Res  

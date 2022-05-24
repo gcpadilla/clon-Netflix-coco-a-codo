@@ -5,9 +5,8 @@
 .degradadoF {
   margin: 30px;
   border-radius: 5px;
-  /* background: linear-gradient(rgb(255 255 255 / 0%),rgba(0, 0, 0, 0.781)); */
   cursor: pointer;
 }
 .degradadoF:hover {
-  transform: scale(1.20); 
+  transform: scale(1.1); 
 }
